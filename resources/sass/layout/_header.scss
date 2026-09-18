@@ -1,0 +1,72 @@
+.app-header {
+  @apply py-3 md:py-4;
+  overflow: visible !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+
+#app_header {
+  overflow: visible !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+}
+
+
+.nav-floating #app_header .app-header {
+  @apply rounded-none;
+}
+
+.nav-sticky #app_header,
+.nav-floating #app_header {
+  @apply top-0 sticky;
+  z-index: 1000 !important;
+  margin: 0 !important;
+}
+
+.nav-hidden #app_header {
+  @apply hidden;
+}
+
+.nav-floating #app_header {
+  @apply top-0 sticky;
+  z-index: 1000 !important;
+  margin: 0 !important;
+}
+
+
+// xl device mobile logo
+.vertical-box {
+  @apply flex;
+}
+
+.horizental-box {
+  @apply hidden;
+}
+
+.main-menu {
+  @apply hidden;
+}
+
+.horizontalMenu {
+  .vertical-box {
+    @apply hidden;
+  }
+
+  .horizental-box {
+    @apply flex;
+  }
+
+  .main-menu {
+    @apply hidden xl:block;
+  }
+
+  .app-header {
+    @apply py-4 xl:py-0;
+  }
+}
+
+.modal {
+  @apply backdrop-blur-sm
+}

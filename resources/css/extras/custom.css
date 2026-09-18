@@ -1,0 +1,119 @@
+@import url(https://cdn.datatables.net/1.13.6/css/dataTables.tailwindcss.min.css);
+
+.ant,
+#app {
+  font-family: 'Play', sans-serif;
+}
+
+.ant-card {
+  border-radius: 8px;
+  box-shadow: 0 0 10px #f6f1f1;
+}
+
+.ant,
+.anticon svg {
+  vertical-align: baseline !important;
+}
+
+.ant-message {
+  font-family: 'Play', sans-serif;
+  font-size: 16px;
+}
+
+.ant-form-item-label>label {
+  font-weight: bold;
+}
+
+.ant-btn-primary {
+  background-color: #1677ff !important;
+}
+
+/* loading button */
+.process {
+  pointer-events: none;
+  cursor: progress;
+  opacity: 0.8;
+  background-size: 20px 20px;
+  background-image: linear-gradient(135deg,
+      rgba(0, 0, 0, 0.25) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(0, 0, 0, 0.25) 50%,
+      rgba(0, 0, 0, 0.25) 75%,
+      transparent 75%,
+      transparent);
+  animation: animate-stripes 0.8s linear infinite;
+}
+
+.process:hover,
+.process:active {
+  background-color: #f7fafc;
+  /* Equivalent to bg-gray-100 in TailwindCSS */
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  /* Equivalent to tracking-widest in TailwindCSS */
+  animation: none;
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 40px 0;
+  }
+}
+
+ul.pagination li.page-item.active>.page-link {
+  color: white;
+  border-color: #1677ff;
+  background-color: #1677ff;
+}
+
+div:where(.swal2-container) h2:where(.swal2-title) {
+  font-family: 'Signika', sans-serif;
+  color: black !important;
+}
+
+.ant-input,
+.ant-input-affix-wrapper,
+.ant-input-password,
+.ant-input-number,
+.ant-input-search,
+.ant-textarea {
+  font-family: 'Signika', sans-serif !important;
+  border: 1px solid #d1e9ff;
+  background-color: #ffffff;
+  border-radius: 8px !important;
+}
+
+.ant-input:focus,
+.ant-input-affix-wrapper:focus,
+.ant-input-affix-wrapper-focused,
+.ant-input-password:focus,
+.ant-input-number:focus,
+.ant-input-search:focus,
+.ant-textarea:focus {
+  border-color: #1677ff !important;
+  box-shadow: 0 0 0 2px rgba(22, 119, 255, 0.1) !important;
+  outline: none !important;
+}
+
+.ant-input-number {
+  width: 100%;
+}
+
+.ant-input-number .ant-input-number-input {
+  border-color: #333333 !important;
+}
+
+.ant-input-number:hover .ant-input-number-input,
+.ant-input-number-focused .ant-input-number-input {
+  border-color: #333333 !important;
+}
+
+.ant-input-number-focused .ant-input-number-input {
+  border-color: #333333 !important;
+  box-shadow: none !important;
+}

@@ -1,0 +1,118 @@
+- Authentication:
+	+ Đăng nhập (google, facebook)
+	+ Đăng ký (google, facebook)
+	+ Quên mật khẩu
+
+- Home Page:
+	+ Banner ảnh hoặc video youtube
+
+	+ TOP nạp tiền hàng tháng
+
+	+ Thông báo chạy ngang website
+
+	+ Lịch sử mua nick trong 24h gần nhât
+
+	+ Thông báo nổi tại trang chủ (modal)
+
+  + Danh mục vật phẩm
+	+ Danh mục cày thuê
+  + Danh mục trò chơi (vòng quay)
+  + Danh mục sản phẩm (tài khoản v1, tài khoản v2)
+
+- Cộng tác viên:
+  + Bán tài khoản (có thể đăng tài khoản vào nhiều nhóm tài khoản v1)
+  + CTV Cày thuê
+  + CTV Vật phẩm
+  + Trang thống kê
+  + Yêu cầu rút tiền
+
+- Client Dashboard:
+	+ Lịch sử mua nick v1
+  + Lịch sử mua nick v2
+
+	+ Lịch sử cày thuê
+	+ Lịch sử mua vật phẩm
+
+	+ Thông tin tài khoản
+	+ Nạp tiền tài khoản (auto bank, thẻ cào, paypal, usdt (fpayment))
+  + Hỗ trợ dịch tự động (sử dụng gtranslate) hoặc thủ công (trong admin)
+	+ Lịch sử dòng tiền (ls giao dịch)
+	+ Trang bài viết / tin tức
+
+  + Tiếp thị liên kết (affiliate)
+  + Rút thưởng tiền tệ (chung)
+  + Rút thưởng tiền tệ (có nhiều loại tiền tệ game khác nhau: robux, quân huy, kim cương...) => dùng cho vòng quay
+  + Quà tặng các loại tiền tệ trong kho vật phẩm  random cho thành viên mới (nhận được 1 lần)
+
+- Admin Dashboard:
+	+ Trang thống kê doanh thu
+
+	+ Cài đặt chung:
+
+		1. Cấu hình title, mô tả, keywords, logo website, chọn nguồn upload ảnh lên [S3 Amazon, DO Spaces, IMGBB...]
+
+		2. Cài đặt thông tin giới thiệu, thông tin liên hệ ở footer
+
+		3. Tuỳ chỉnh giao dịch (upload banner hoặc id video youtube)
+
+		4. Tuỳ chỉnh cú pháp nạp tiền, % khuyến mãi
+
+		5. Code tuỳ chỉnh ở header và footer
+
+    6. Rút Thưởng Miễn Phí Vật Phẩm Trong Trò Chơi [GỐC TRÁI WEBSITE]
+
+    7. Thông Tin Nạp Tiền (bật tắt các cổng nạp: bank, card, usdt...)
+
+    8. Thông Báo Đơn Hàng Về Telegram (đơn hàng cày thuê, vật phẩm)
+
+    9. Cấu hình Affiliate Program (thông tin số tiền tối đa, tối thiểu cho rút tiền hoa hồng affiliate)
+
+	+ Cấu hình api key:
+
+		1. API nạp tiền tự động qua ngân hàng (web2m)
+
+		2. API nạp thẻ cào tự động (card24h hoặc site có api tương tự)
+
+    3. Cấu hình ClientID, ClientSecret cho đăng nhập bằng google, facebook
+
+    4. Cấu hình SMTP cho chức năng đặt lại mật khẩu
+
+    5. API nạp tiền bằng USD (paypal, perfectmoney), USDT (fpayment.co)
+
+    5. UPLOAD FILE | S3 Amazon | Digital Ocean Spaces | MG BB
+
+	+ Cài đặt thông báo website
+
+	+ Quản lý thành viên (cộng tiền, trừ tiền, khoá tài khoản, cập nhật mật khẩu...)
+
+	+ Quản lý tài khoản ngân hàng (bank để khách nạp tiền)
+
+	+ Lịch sử hoạt động thành viên
+
+	+ Lịch sử giao dịch thành viên
+
+	+ Quản lý thẻ cào đã nạp của khách
+
+	+ Quản lý bài viết (tin tức)
+
+        + Quản lý Mini game Vòng Quay
+
+	+ Dịch vụ cày thuê / tài khoản v1 / tài khoản v2 / vật phẩm:
+
+		1. Quản lý đơn hàng
+
+		2. Thêm, sửa, xoá danh mục dịch vụ
+
+		3. Thêm, sửa, xoá nhóm dịch vụ
+
+		4. Thêm, sửa, xoá gói dịch vụ
+
+  + Quản lý yêu cầu rút tiền hoa hồng (affiliate)
+
+  + Quản lý tiếp thị liên kết (thành viên affiliate)
+
+  + Lịch sử nhận tiền qua API ngân Hàng
+
+  + Quản lý kho hàng (đây là danh sách tiền tệ game)
+  + Quản lý phần thưởng (đây là danh sách số dư của từng loại game và người dùng)
+  + Yêu cầu rút thưởng (loại chung, và loại riêng từng game)

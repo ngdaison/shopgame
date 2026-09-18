@@ -1,0 +1,14 @@
+- <h4>Version: 6079</h4>
+- Sửa lỗi upload ảnh sản phẩm (shopnickv1) ở trang CTV
+- Cập nhật chức năng nạp tiền bằng hóa đơn <a href="/admin/invoices">/admin/invoices</a>, có thể duyệt khi API nạp bank bị lỗi
+- <h4>Version: 6078</h4>
+- Cập nhật & tối ưu hiệu suất mã nguồn
+- Cập nhật giao diện admin & cộng tác viên
+- Tối ưu tốc độ load sản phẩm của shop nick v1&v2
+<span class="text-danger">- Tách thống kê nạp thẻ & ngân hàng (reset dữ liệu cũ)</span>
+- Cập nhật chức năng quản lý phần thưởng cho vòng quay (nhiều loại game khác nhau) cập nhật tại <a href="/admin/inventories/vars">đây</a>
+- Loại bỏ bớt thống kê không cần thiết tại trang chủ và chia thống kê nạp thẻ cào & chuyển khoản
+- Cho phép chọn nguồn tải hình ảnh (Hosting, S3 Amazon, IMG BB hoặc DigitalOcean Spaces) [CDN] để giảm tải máy chủ cập nhật tại <a href="/admin/settings/general">đây</a>, và <a href="/admin/settings/apis">đây</a>
+<span class="text-danger">- Thêm chức năng nhận thưởng theo số lượng kho hàng cho người mới, cập nhật tại <a href="/admin/settings/general">đây</a></span>
+- Xem hướng dẫn sử dụng tại: <a href="https://help.cmsnt.co/danh-muc/huong-dan-su-dung-shopnick3/" target="_blank">https://help.cmsnt.co/danh-muc/huong-dan-su-dung-shopnick3/</a>
+<span class="text-primary">*** Nếu có lỗi trong bản mới, vui lòng báo ngay cho admin để xử lý nhanh nhất có thể nha...</span>

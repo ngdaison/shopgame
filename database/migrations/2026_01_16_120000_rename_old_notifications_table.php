@@ -1,0 +1,28 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        if (Schema::hasTable('notifications') && !Schema::hasTable('system_notices')) {
+            Schema::rename('notifications', 'system_notices');
+        }
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        if (Schema::hasTable('system_notices') && !Schema::hasTable('notifications')) {
+            Schema::rename('system_notices', 'notifications');
+        }
+    }
+};
