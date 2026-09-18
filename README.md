@@ -2,6 +2,10 @@
 
 > Website thương mại điện tử chuyên biệt cho lĩnh vực game, hỗ trợ mua bán tài khoản, vật phẩm, dịch vụ cày thuê và mini game vòng quay may mắn.
 
+<p align="center">
+  <img src="docs/images/homepage-preview.png" alt="ShopGame - Giao diện trang chủ" width="100%">
+</p>
+
 ---
 
 ## 📋 Mục Lục
